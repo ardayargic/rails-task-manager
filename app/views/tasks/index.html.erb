@@ -1,0 +1,15 @@
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+    <br><br>
+    <%= link_to "Please,do your task!😊", task_path(task) %>
+    <br><br>
+
+  <% end %>
+</ul>
+
+<a href="/tasks/1">Eat your brocoli</a>
+<br><br>
+<a href="/tasks/2">Tidy your bed</a>
+<br><br>
+<a href="/tasks/3">Wash your dish</a>
